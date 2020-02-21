@@ -1,0 +1,33 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% load staticfiles %}
+{% block body1 %}
+
+<header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>An APOGEE Coding Event By CSA</strong>
+            </h1>
+            <hr>
+          </div>
+		  {% if user.is_authenticated %}
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Test your coding skills in an unorthodox contest,where you will be scored not only on correctness but also on the style of code.</p>
+            
+			<a class="btn btn-primary btn-xl js-scroll-trigger" href="/app/round1/">Round 1</a>
+			
+			</div>
+			{% else %}
+			<div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Test your coding skills in an unorthodox contest,where you will be scored not only on correctness but also on the style of code.</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="/app/register/">REGISTER NOW</a>
+			</div>
+			{% endif %}
+          </div>
+        </div>
+     
+</header>
+
+{% endblock %}	
