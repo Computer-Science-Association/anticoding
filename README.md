@@ -7,7 +7,7 @@ Guaranteed to work with python 3.5 but not above.
 It is advisable to use Anaconda. Follow these instructions to install Anaconda and python 3.5 in the environment:
 1. Install Anaconda(https://www.anaconda.com/distribution/).
 2. Create a new conda environment and install python 3.5: `$conda create -n NAME_OF_ENV python=3.5`, where `NAME_OF_ENV` is to be replaced by your preferred name.
-3. The environment can be activated by: `$conda activate NAME_OF_ENV` and deactivated by `NAME_OF_ENV`.
+3. The environment can be activated by: `$conda activate NAME_OF_ENV` and deactivated by `$deactivate`.
 
 Change the directory to the anticoding folder and enable the environment, then follow these instructions:
 1. `$pip install -r requirements.txt`	
