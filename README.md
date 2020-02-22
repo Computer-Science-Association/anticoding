@@ -17,3 +17,5 @@ Change the directory to the anticoding folder and enable the environment, then f
 5. Or you can also `$python manage.py runserver <IP address>:<port>` . You can find the IP address using ipconfig(Windows)/ifconfig(Ubuntu). Port can be anything.
 	Eg: `$python manage.py runserver 192.168.0.1:8900`. This will allow other computers to connect to the server using the same ip address and port(192.168.0.1:8900).
 6. Or you can simply run `$python manage.py runserver 0.0.0.0:8000`. And other computers to connect to the server using the server ip address and port as 8000.(You can find the IP address using ipconfig(Windows)/ifconfig(Ubuntu))
+
+NOTE: Before deployement during event, remember to change the `security_key` in anticoding/settings.py. The app will function without doing this but that would leave a huge security vulnerability.
