@@ -9,6 +9,9 @@ It is advisable to use Anaconda. Follow these instructions to install Anaconda a
 2. Create a new conda environment and install python 3.5: `$conda create -n NAME_OF_ENV python=3.5`, where `NAME_OF_ENV` is to be replaced by your preferred name.
 3. The environment can be activated by: `$source activate NAME_OF_ENV` and deactivated by `$deactivate`.
 
+Refer to this link for more details about using conda environments:
+https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
 Change the directory to the anticoding folder and enable the environment, then follow these instructions:
 1. `$pip install -r requirements.txt`	
 2. `$python manage.py migrate`
@@ -18,4 +21,4 @@ Change the directory to the anticoding folder and enable the environment, then f
 	Eg: `$python manage.py runserver 192.168.0.1:8900`. This will allow other computers to connect to the server using the same ip address and port(192.168.0.1:8900).
 6. Or you can simply run `$python manage.py runserver 0.0.0.0:8000`. And other computers to connect to the server using the server ip address and port as 8000.(You can find the IP address using ipconfig(Windows)/ifconfig(Ubuntu))
 
-NOTE: Before deployement during event, remember to change the `SECRET_KEY` in anticoding/settings.py. The app will function without doing this but that would leave a huge security vulnerability.
+IMPORTANT: Before deployement during event, remember to change the `SECRET_KEY` in anticoding/settings.py. The app will function without doing this but that would leave a huge security vulnerability.
