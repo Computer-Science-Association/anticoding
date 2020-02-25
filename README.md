@@ -23,4 +23,4 @@ Change the directory to the anticoding folder and enable the environment, then f
 
 IMPORTANT: Before deployement during event, remember to change the `SECRET_KEY` in anticoding/settings.py. The app will function without doing this but that would leave a huge security vulnerability.
 
-Now that the server is running, you can go to /admin and login with superuser credentials. The For Admin Object has three fields which should be 0 before starting, and can be made 1 to start that particular round or end the event. The scores for round 1 need to be added to each team listed in Infos section. Ascii scoring is automated. The correctness needs to be checked indivisually.
+Now that the server is running, you can go to /admin and login with superuser credentials. The For Admin Object has three fields which should be 0 before starting, and can be made 1 to start that particular round or end the event. The scores for round 1 need to be added to each team listed in Infos section. Ascii scoring is automated. The correctness needs to be checked individually.
